@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/tianshi.gif" id="img" alt="">
+    <script>
+        // var img = document.querySelector("#img");
+        // document.onmouseover = function (e) {
+        //     img.style.position = "fixed";
+        //     img.style.left = e.clientX + "px";
+        //     img.style.top = e.clientY + "px";
+        // }
+        var ts = document.querySelector("img");
+  document.onmousemove = function (e) {
+    //设置小天使的left与top
+    ts.style.position = "absolute";
+    ts.style.left = e.pageX + "px";
+    ts.style.top = e.pageY + "px";
+  }
+
+//     var ts = document.querySelector("img");
+//   document.onmousemove = function (e) {
+//     //设置小天使的left与top
+//     ts.style.position = "fixed";
+//     ts.style.left = e.clientX + "px";
+//     ts.style.top = e.clientY + "px";
+//   }
+    </script>
+</body>
+</html>

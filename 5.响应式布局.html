@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reponsive () {
+            var pageWidth = window.innerWidth;
+            if (pageWidth >= 960) {
+                document.body.style.backgroundColor = "pink";
+                document.body.innerText = "电脑";
+            } else if (pageWidth >= 600) {
+                document.body.style.backgroundColor = "green";
+                document.body.innerText = "平板";
+            } else {
+                document.body.style.backgroundColor = "blue";
+                document.body.innerText = "手机";
+            }
+        }
+        reponsive();
+        window.onresize = function () {
+            reponsive();
+        }
+    </script>
+</body>
+</html>
